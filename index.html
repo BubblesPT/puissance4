@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="classes.js"></script>
+    <script src="myscript.js"></script>
+
+</head>
+<body>
+    <div id="startMenu">
+        <div id="p1">
+            <ul id="colorp1">
+                <li >
+                    <div class="col red chosen" data-color="red" id="p1red"></div>
+                </li>
+                <li class="cantTarget2">
+                    <div class="col blue" data-color="blue" id="p1blue"></div>
+                </li>
+                <li>
+                    <div class="col purple" data-color="purple" id="p1purple"></div>
+                </li>
+                <li>
+                    <div class="col yellow" data-color="yellow" id="p1yellow"></div>
+                </li>
+                <li>
+                    <div class="col black" data-color="black" id="p1black"></div>
+                </li>
+            </ul>
+
+
+                <label for="p1name">Player 1 name:</label>
+                <input type="text" id="p1name" name="p1name">
+                <label for="numcols">Number of columns:</label>
+                <input type="number" id="numcols" name="numcols">
+
+
+        </div>
+
+        <div id="p2">
+
+            <label for="numrows">Number of rows:</label>
+            <input type="number" id="numrows" name="numrows">
+            <label for="p2name">Player 2 name:</label>
+            <input type="text" id="p2name" name="p2name">
+
+
+
+            <ul id="colorp2">
+                <li class="cantTarget1">
+                    <div class="col red" data-color="red" id="p2red"></div>
+                </li>
+                <li>
+                    <div class="col blue chosen" data-color="blue" id="p2blue"></div>
+                </li>
+                <li>
+                    <div class="col purple" data-color="purple" id="p2purple"></div>
+                </li>
+                <li>
+                    <div class="col yellow" data-color="yellow" id="p2yellow"></div>
+                </li>
+                <li>
+                    <div class="col black" data-color="black" id="p2black"></div>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+    </div>
+    <div id="btnStartGame">
+        <button id="startGame">Start Game!</button>
+    </div>
+
+
+    <div id="yourspace">
+        <!--<div id="myCanvas"></div>-->
+        <div id="myGrid">
+
+        </div>
+    </div>
+
+    <div id="playerTurn" style="text-align: center">
+
+    </div>
+    <div id="gameButtons" class="hide">
+        <button id="restart">Restart</button>
+        <button id="newGame">Start Over!</button>
+    </div>
+
+    <audio id="myAudio">
+        <source src="assets/click.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="controls hide">
+        <div class="scores">
+            <div>
+                <span id="spanP1">Player 1</span>
+                <span id="countP1">0</span>
+            </div>
+            <div>
+                <span id="spanP2">Player 2</span>
+                <span id="countP2">0</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

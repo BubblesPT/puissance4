@@ -1,0 +1,216 @@
+body {
+    text-align: center;
+    background-color: #3d3d3d;
+}
+
+#startMenu.hide {
+    display: none;
+}
+.chosen{
+    border: chartreuse 5px solid;
+}
+
+.cantTarget1{
+    pointer-events: none;
+}
+
+.cantTarget2{
+    pointer-events: none;
+}
+#p1{
+    display: inline-flex;
+}
+#p2{
+    display: inline-flex;
+}
+
+#startMenu {
+    /*position: relative;*/
+    display: inline-flex;
+}
+
+#colorp1 {
+    float: left;
+}
+#colorp2 {
+    float: right;
+}
+
+#startGame{
+    float: bottom;
+}
+
+#myGrid {
+    position: relative;
+    /*top: 9px;*/
+    /*background-color: dodgerblue;*/
+    background-color: #7d5fff;;
+    display: inline-block;
+    border-radius: 15px;
+
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.controls > .scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.controls > .scores > div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75em;
+    margin: 0.5em;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.25em;
+}
+
+.controls > .scores > div > span:first-child {
+    margin-bottom: 0.5em;
+}
+
+.controls > .scores > div > span:last-child {
+    font-size: 1.5em;
+}
+
+
+#yourspace {
+    /*background-color: yellow;*/
+    display: inline-block;
+}
+
+.col {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 3px;
+    /*padding: 0px;
+    border: none;*/
+    /*background-color: white;*/
+    background-color: #3d3d3d;
+    border-radius: 50%;
+}
+
+.col.empty {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.row {
+    /*margin: 0px;
+    padding: 0px;
+    border: none;
+    border-image-width: 0px;
+    height: 100px;*/
+
+}
+
+.next-red {
+    background-color: indianred;
+}
+
+.col.red {
+    background-color: red;
+}
+
+.next-blue {
+    background-color: cadetblue;
+}
+
+.col.blue {
+    background-color: blue;
+}
+
+.next-purple {
+    background-color: mediumpurple;
+}
+
+.col.purple {
+    background-color: purple;
+}
+
+.next-yellow {
+    background-color: lightyellow;
+}
+
+.col.yellow {
+    background-color: yellow;
+}
+
+.next-black {
+    background-color: dimgrey;
+}
+
+.col.black {
+    background-color: black;
+}
+
+.hide{
+    display: none;
+}
+input{
+    background-color: #3d3d3d;
+    height: 20px;
+    align-self: center;
+    color: white;
+    border: 2px solid white;
+}
+button {
+    display: inline-flex;
+    position: relative;
+    margin-top: 1em;
+    padding: 0.75em 1em;
+
+    outline: none;
+    border: none;
+    border-radius: 3em;
+
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #7d5fff;
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+label{
+    align-self: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+}
+
+button:hover,
+button:focus {
+    background-color: #886dff;
+}
+
+button:active {
+    background-color: #7158e2;
+    transform: translateY(2px);
+}
+
+#playerTurn{
+    color: darkgrey;
+    /*width: 800px;*/
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
